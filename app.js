@@ -1,3 +1,15 @@
+// The package.json is a JSON-formatted file that contains the blueprint for the 
+// program being written. It describes the project, provides metadata, and tracks 
+// dependencies as well as scripts for task automation. It ensures a consistent 
+// result for all devs collaborating. This also allows git to only need to track 
+// one file rather than every single dependency module within a repo. Node modules 
+// should be excluded from the version control because each individual package has 
+// their own version control and also because it's simply a waste of space. The 
+// 'npm install' command parses the package.json and installs dependencies as 
+// directed within the file. Dependencies may have sub-dependencies as outlined 
+// in their respective package.json files. So NPM becomes exponentially more important 
+// as we build layer upon layer.
+
 const yargs = require('yargs');
 const { hideBin } = require('yargs/helpers');
 const chalk = require('chalk');
