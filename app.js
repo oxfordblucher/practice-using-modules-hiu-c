@@ -39,5 +39,7 @@ if (argv.city) {
             console.log(chalk.yellow("64F"));
             console.log(chalk.hex("#FF8800")("Sunny"));
             break;
+        default:
+            console.log(chalk.red("Please try again with a valid city name"));
     }
 }
